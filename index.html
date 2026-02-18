@@ -10,11 +10,27 @@
     <div class="theme-switch-wrapper">
         <button id="theme-toggle">다크 모드</button>
     </div>
-    <div class="menu-machine">
-        <h1>오늘 저녁 뭐 먹지?</h1>
-        <div class="menu-display">메뉴를 추천해드릴게요!</div>
-        <button id="generate-btn">메뉴 추천받기</button>
+    
+    <div class="container">
+        <div class="menu-machine">
+            <h1>오늘 저녁 뭐 먹지?</h1>
+            <div class="image-container">
+                <img id="food-image" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="음식 이미지">
+            </div>
+            <div class="menu-display">메뉴를 추천해드릴게요!</div>
+            <button id="generate-btn">메뉴 추천받기</button>
+        </div>
+
+        <div class="inquiry-section">
+            <h2>제휴 및 문의</h2>
+            <form action="https://formspree.io/f/xoqgjojj" method="POST" id="inquiry-form">
+                <input type="email" name="email" placeholder="이메일 주소" required>
+                <textarea name="message" placeholder="문의 내용을 입력하세요" required></textarea>
+                <button type="submit">보내기</button>
+            </form>
+        </div>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
